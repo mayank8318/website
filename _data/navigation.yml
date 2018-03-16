@@ -1,0 +1,131 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  - title: "Software"
+    url: /software/
+  - title: "Community"
+    url: /community/
+  - title: "Download"
+    url: /download/
+
+about:
+  - title: About Open Data Kit
+    url: /about/
+    children:
+    - title: "FAQ"
+      url: /about/faq/
+    - title: "Research"
+      url: /about/research/
+    - title: "Support Our Work"
+      url: /about/support/
+    - title: "Contact Us"
+      url: /about/contact/
+
+software:
+  - title: ODK Software
+    url: /software/
+    children:
+    - title: "Data Collection (ODK 1)"
+      url: /software/odk1/
+    - title: "Info Management (ODK 2)"
+      url: /software/odk2/
+    - title: "Ecosystem & Partners"
+      url: /software/ecosystem/
+    - title: "Security & Privacy &raquo;"
+      url: http://docs.opendatakit.org/security-privacy/
+    - title: "Documentation Hub &raquo;"
+      url: http://docs.opendatakit.org/
+    - title: "Form Design"
+      url: /software/form-design/
+    - title: "Image-Based Forms"
+      url: /software/image-based-forms/
+    - title: "Training Guide"
+      url: /software/training-guide/
+
+download:
+  - title: ODK Downloads
+    url: /download/
+    children:
+    - title: "Get ODK 1"
+      url: /download/odk1/
+    - title: "Get ODK 2"
+      url: /download/odk2/
+    - title: "SHA Signatures"
+      url: /assets/signatures.txt
+
+odk1:
+  - title: ODK Software
+    url: /software/
+    children:
+    - title: "ODK 1 Overview"
+      url: /software/odk1/
+    - title: "Collect &raquo;"
+      url: http://docs.opendatakit.org/collect-intro/
+    - title: "Aggregate &raquo;"
+      url: http://docs.opendatakit.org/aggregate-intro/
+    - title: "Briefcase &raquo;"
+      url: http://docs.opendatakit.org/briefcase-guide/
+    - title: "Build &raquo;"
+      url: http://docs.opendatakit.org/odk-build/
+
+odk2:
+  - title: ODK Software
+    url: /software/
+    children:
+    - title: "ODK 2 Overview"
+      url: /software/odk2/
+    - title: "Application Designer &raquo;"
+      url: https://docs.opendatakit.org/odk2/app-designer-intro/
+    - title: "Survey &raquo;"
+      url: https://docs.opendatakit.org/odk2/survey-intro/
+    - title: "Tables &raquo;"
+      url: https://docs.opendatakit.org/odk2/tables-intro/
+    - title: "Services &raquo;"
+      url: https://docs.opendatakit.org/odk2/services-intro/
+    - title: "Cloud Endpoints &raquo;"
+      url: https://docs.opendatakit.org/odk2/cloud-endpoints-intro/
+    - title: "Suitcase &raquo;"
+      url: https://docs.opendatakit.org/odk2/suitcase-intro/
+
+community:
+  - title: Get Involved
+    url: /community/
+    children:
+    - title: "ODK Community Blog"
+      url: /blog/
+    - title: "Governance"
+      url: /community/governance/
+    - title: "ODK Forum &raquo;"
+      url: https://forum.opendatakit.org
+    - title: "Twitter &raquo;"
+      url: https://twitter.com/OpenDataKit
+    - title: "Facebook &raquo;"
+      url: https://facebook.com/OpenDataKit
+
+form-design:
+  - title: Form Design Overview
+    url: /software/form-design/
+    children:
+    - title: "Binding"
+      url: /software/form-design/binding/
+    - title: "Body"
+      url: /software/form-design/body/
+    - title: "Guidelines"
+      url: /software/form-design/guidelines/
+    - title: "Data Preloading"
+      url: /software/form-design/data-preloading/
+    - title: "Cascading Selects"
+      url: /software/form-design/cascading-selects/
+    - title: "External Itemsets"
+      url: /software/form-design/external-itemsets/
+    - title: "OpenStreetMap"
+      url: /software/form-design/openstreetmap/
+    - title: "iText Elements"
+      url: /software/form-design/itext-elements/
+    - title: "Examples"
+      url: /software/form-design/examples/
+    - title: "Gotchas and Workarounds"
+      url: /software/form-design/workarounds/
+    - title: "XLSForm &raquo;"
+      url: http://xlsform.org/

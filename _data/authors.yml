@@ -1,0 +1,45 @@
+Yaw Anokwa:
+  name: "Yaw Anokwa"
+  uri: "http://anokwa.com/"
+  bio: "CEO at Nafundi & founder of Open Data Kit"
+  avatar: "/assets/images/authors/yanokwa.jpg"
+  twitter: "yanokwa"
+  github: "yanokwa"
+
+
+Hélène Martin:
+  name: "Hélène Martin"
+  uri: "http://helenemartin.com/"
+  bio: "Passionate about education, computer science, sewing..."
+  avatar: "/assets/images/authors/ln.jpg"
+  twitter: "purplespatula"
+  location: "San Diego, CA"
+  github: "lognaturel"
+
+
+Waylon Brunette:
+  name: "Waylon Brunette"
+  bio: "ODK Project Management Committee"
+  location: "Seattle, WA"
+  avatar: "/assets/images/authors/waylon.jpg"
+  github: "wbrunette"
+
+Richard Anderson:
+  name: "Richard Anderson"
+  bio: "Professor @ University of Washington; ODK Project Management Committee"
+  location: "Seattle, WA"
+  avatar: "/assets/images/authors/richard.jpg"
+  uri: "https://www.cs.washington.edu/people/faculty/anderson"
+
+Carl Hartung:
+  name: "Carl Hartung"
+  bio: "Co-founder & CTO at Libro.fm; ODK Project Management Committee"
+  location: "Seattle, WA"
+  avatar: "/assets/images/authors/carl.jpg"
+  github: "chartung"
+
+Mitchell Sundt:
+  name: "Mitch Sundt"
+  location: "Seattle, WA"
+  avatar: "/assets/images/authors/msundt.jpg"
+  github: "mitchellsundt"
