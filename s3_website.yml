@@ -8,6 +8,10 @@ error_document: index.html
 max_age: 300
 gzip: true
 
+exclude_from_upload:
+  - s3_website.yml
+  - CNAME
+
 cloudfront_distribution_id: E24Q6N70UTYYB6
 
 cloudfront_distribution_config:
