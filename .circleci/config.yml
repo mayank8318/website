@@ -16,8 +16,11 @@ jobs:
           name: Checkout binaries
           command: git lfs pull
       - run:
+          name: Install build requirements
+          command: bundle install
+      - run:
           name: Build site
-          command: bundle exec jekyll build
+          command: jekyll build
       - store_artifacts:
           path: _site
           destination: _site
@@ -44,7 +47,7 @@ jobs:
           name: Push to S3
           command: |
               if [[ "$CIRCLE_PROJECT_USERNAME" == "opendatakit" ]]; then \
-                s3_website help
+                s3_website push
               fi
 
 workflows:
