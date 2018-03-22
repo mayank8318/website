@@ -8,7 +8,7 @@ error_document: index.html
 max_age: 300
 gzip: true
 
-cloudfront_distribution_id: 
+cloudfront_distribution_id: E24Q6N70UTYYB6
 
 cloudfront_distribution_config:
   default_cache_behavior:
