@@ -15,9 +15,9 @@ title                    : "Open Data Kit"
 title_separator          : "-"
 name                     : &name "ODK Community" # &name is a YAML anchor which can be *referenced later
 description              : &description "Home of the Open Data Kit software & community."
-url                      : "http://odk-nt.osc.dial.community" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://staging.opendatakit.org" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "DIAL-Community/opendatakit.org"
+repository               : "opendatakit/website"
 teaser                   : "/assets/odk/banner.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
