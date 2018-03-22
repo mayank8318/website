@@ -6,6 +6,8 @@ jobs:
       - image: circleci/ruby:latest
     steps:
       - checkout
+      - restore_cache:
+          key: gems-{{ checksum "Gemfile.lock" }}
       - run:
           name: Install checkout requirements
           command: |
@@ -21,6 +23,10 @@ jobs:
       - run:
           name: Build site
           command: jekyll build
+      - save_cache:
+          paths:
+            - /usr/local/bundle/gems
+          key: gems-{{ checksum "Gemfile.lock" }}
       - store_artifacts:
           path: _site
           destination: _site
@@ -49,7 +55,6 @@ jobs:
               if [[ "$CIRCLE_PROJECT_USERNAME" == "opendatakit" ]]; then \
                 s3_website push
               fi
-
 workflows:
   version: 2
   build_deploy:
