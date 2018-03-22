@@ -1,0 +1,60 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/work
+    docker:
+      - image: circleci/ruby:latest
+    steps:
+      - checkout
+      - run:
+          name: Install checkout requirements
+          command: |
+            curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+            sudo apt-get install git-lfs
+            git lfs install
+      - run:
+          name: Checkout binaries
+          command: git lfs pull
+      - run:
+          name: Build site
+          command: bundle exec jekyll build
+      - store_artifacts:
+          path: _site
+          destination: _site
+      - persist_to_workspace:
+          root: ~/work
+          paths:
+            - _site/*
+            - s3_website.yml
+  deploy:
+    working_directory: ~/work
+    docker:
+      - image: circleci/ruby:latest
+    steps:
+      - attach_workspace:
+          at: ~/work
+      - run:
+          name: Install deploy requirements
+          command: |
+              if [[ "$CIRCLE_PROJECT_USERNAME" == "opendatakit" ]]; then \
+                sudo apt-get install -y openjdk-8-jre-headless
+                gem install s3_website && s3_website install
+              fi
+      - run:
+          name: Push to S3
+          command: |
+              if [[ "$CIRCLE_PROJECT_USERNAME" == "opendatakit" ]]; then \
+                s3_website help
+              fi
+
+workflows:
+  version: 2
+  build_deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
