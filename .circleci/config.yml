@@ -22,7 +22,7 @@ jobs:
           command: bundle install
       - run:
           name: Build site
-          command: jekyll build
+          command: JEKYLL_ENV=production jekyll build
       - save_cache:
           paths:
             - /usr/local/bundle/gems
