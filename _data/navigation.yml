@@ -17,6 +17,8 @@ about:
       url: /about/faq/
     - title: "Research"
       url: /about/research/
+    - title: "Ecosystem"
+      url: /about/ecosystem/
     - title: "Support Our Work"
       url: /about/support/
     - title: "Contact Us"
@@ -30,8 +32,6 @@ software:
       url: /software/odk1/
     - title: "Info Management (ODK 2)"
       url: /software/odk2/
-    - title: "Ecosystem & Partners"
-      url: /software/ecosystem/
     - title: "Security & Privacy &raquo;"
       url: http://docs.opendatakit.org/security-privacy/
     - title: "Documentation Hub &raquo;"
